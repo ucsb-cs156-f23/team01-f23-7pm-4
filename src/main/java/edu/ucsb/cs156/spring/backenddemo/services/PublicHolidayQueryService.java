@@ -20,9 +20,10 @@ public class PublicHolidayQueryService {
         restTemplate = restTemplateBuilder.build();
     }
 
-    public static final String ENDPOINT = "";
+    public static final String ENDPOINT = "https://date.nager.at/api/v2/publicholidays/{year}/{countryCode}";
 
     public String getJSON(String year, String countryCode) throws HttpClientErrorException {
+        Map<String, String> uriVariables = Map.of("year", year, "countryCode", countryCode);
         return "";
     }
 
