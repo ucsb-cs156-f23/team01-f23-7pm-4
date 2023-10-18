@@ -33,9 +33,9 @@ import io.swagger.v3.oas.annotations.tags.Tag;
     public ResponseEntity&lt;String&gt; getLocations(
         @Parameter(name=&quot;Location&quot;, description=&quot;name to search&quot;, example=&quot;Isla vista&quot;) @RequestParam String location
     ) throws JsonProcessingException {
-<span class="nc" id="L36">        log.info(&quot;Location: location={}&quot;, location);</span>
-<span class="nc" id="L37">        String result = LocationQueryService.getJSON(location);</span>
-<span class="nc" id="L38">        return ResponseEntity.ok().body(result);</span>
+<span class="fc" id="L36">        log.info(&quot;Location: location={}&quot;, location);</span>
+<span class="fc" id="L37">        String result = LocationQueryService.getJSON(location);</span>
+<span class="fc" id="L38">        return ResponseEntity.ok().body(result);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
