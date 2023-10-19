@@ -17,7 +17,6 @@ import org.springframework.web.client.HttpClientErrorException;
 @Service
 public class UniversityQueryService {
 
-
     private final RestTemplate restTemplate;
 
     public UniversityQueryService(RestTemplateBuilder restTemplateBuilder) {
