@@ -29,13 +29,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
     @Autowired
     LocationQueryService LocationQueryService;
 
-    @Operation(summary = &quot;Get list of locations that match a given location name&quot;, description = &quot;Uses API documented here: https://nominatim.org/release-docs/develop/api/Search/&quot;)    @GetMapping(&quot;/get&quot;)
+    @Operation(summary = &quot;Get list of locations that match a given location name&quot;, description = &quot;Uses API documented here: https://nominatim.org/release-docs/develop/api/Search/&quot;)
+    @GetMapping(&quot;/get&quot;)
     public ResponseEntity&lt;String&gt; getLocations(
-        @Parameter(name=&quot;Location&quot;, description=&quot;name to search&quot;, example=&quot;Isla vista&quot;) @RequestParam String location
+        @Parameter(name=&quot;location&quot;, example=&quot;Isla vista&quot;) @RequestParam String location
     ) throws JsonProcessingException {
-<span class="fc" id="L36">        log.info(&quot;Location: location={}&quot;, location);</span>
-<span class="fc" id="L37">        String result = LocationQueryService.getJSON(location);</span>
-<span class="fc" id="L38">        return ResponseEntity.ok().body(result);</span>
+<span class="fc" id="L37">        log.info(&quot;location: location={}&quot;, location);</span>
+<span class="fc" id="L38">        String result = LocationQueryService.getJSON(location);</span>
+<span class="fc" id="L39">        return ResponseEntity.ok().body(result);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
