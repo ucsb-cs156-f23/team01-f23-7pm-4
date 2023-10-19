@@ -30,12 +30,12 @@ public class UniversityController {
     @Autowired
     UniversityQueryService universityQueryService;
 
-    @Operation(summary="Get list of universities that match a given name", description ="Country data uploaded to OpenDataSoft by the International Labour Organization")
+    @Operation(summary="Get list of universities that match a given name", description ="Uses API documented here: http://universities.hipolabs.com/search\n")
     @GetMapping("/get")
     public ResponseEntity<String> getUniversities(
-        @Parameter(name="name", example="Harvard") @RequestParam String name
+        @Parameter(name="name", description="name to search, e.g. 'Harvard' or 'Stanford'") @RequestParam String name
     ) throws JsonProcessingException {
-        log.info("getCountryCodes: name={}", name);
+        // log.info("getCountryCodes: name={}", name);
         String result = universityQueryService.getJSON(name);
         return ResponseEntity.ok().body(result);
 
