@@ -5,7 +5,7 @@ on:
     workflows: ["02-gh-pages-rebuild-part-1"]
     types:
       - completed
-
+      
 env:
   GH_TOKEN: ${{ github.token }}
   javadoc_dest: target/site/apidocs
