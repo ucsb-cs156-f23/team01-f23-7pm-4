@@ -11,7 +11,8 @@ Lab instructions: <https://ucsb-cs156.github.io/f23/lab/team01.html>
 |Audrey Zhu    | audoreven | `PublicHolidayQueryService` | `PublicHolidayController` |   
 |Sasha Nisavic | anisavic  | `TidesQueryService`         | `TidesController`         |   
 |Eric Marzouk  | EricM5    | `UniversityQueryService`    | `UniversityController`    |
-|              |           | `ZipCodeQueryService`       | `ZipCodeController`       |
+|Alice Zhong   |alicezhong1| `ZipCodeQueryService`       | `ZipCodeController`       |
+
 ```
 
 
