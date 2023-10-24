@@ -128,7 +128,7 @@ jobs:
     - name: c-jacoco Download artifact
       uses: dawidd6/action-download-artifact@v2.27.0
       with:
-        workflow: 02-gh-pages-rebuild-part-1.yml
+        workflow: 02-gh-pages-rebuild-part-1-backend.yml
         github_token: ${{ github.token }}
         name: jacoco
         path: ${{ env.jacoco_dest }}
@@ -149,7 +149,7 @@ jobs:
     - name:  d-pitest Download artifact
       uses: dawidd6/action-download-artifact@v2.27.0
       with:
-        workflow: 02-gh-pages-rebuild-part-1.yml
+        workflow: 02-gh-pages-rebuild-part-1-backend.yml
         github_token: ${{ github.token }}
         name: pitest
         path: ${{ env.pitest_dest }}
