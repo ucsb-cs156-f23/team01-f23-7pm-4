@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-f23/team01-f23-7pm-4
 owner: ucsb-cs156-f23
 repo_name: team01-f23-7pm-4
-pull_requests: [{"author":{"id":"U_kgDOBm-S5A","is_bot":false,"login":"alicezhong1","name":""},"headRefName":"Alice-ZipCode-Controller","number":27,"title":"Alice zip code controller","url":"https://github.com/ucsb-cs156-f23/team01-f23-7pm-4/pull/27"},{"author":{"id":"MDQ6VXNlcjQyNDg2NTk1","is_bot":false,"login":"Bennyyyyy","name":"Benny Conte"},"headRefName":"Benjamin-LocationService-Controller","number":22,"title":"Benjamin Location Controller and Tests","url":"https://github.com/ucsb-cs156-f23/team01-f23-7pm-4/pull/22"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjQyNDg2NTk1","is_bot":false,"login":"Bennyyyyy","name":"Benny Conte"},"headRefName":"Benjamin-LocationService-Controller","number":22,"title":"Benjamin Location Controller and Tests","url":"https://github.com/ucsb-cs156-f23/team01-f23-7pm-4/pull/22"}]
