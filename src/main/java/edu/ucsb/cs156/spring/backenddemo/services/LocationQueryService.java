@@ -28,17 +28,17 @@ public class LocationQueryService {
         restTemplate = restTemplateBuilder.build();
     }
 
-    public static final String ENDPOINT = "https://nominatim.openstreetmap.org/search/{location}?format=json";
+    public static final String ENDPOINT = "https://nominatim.openstreetmap.org/search?q={location}&format=json";
 
     public String getJSON(String location) throws HttpClientErrorException {
         log.info("location={}", location);
-
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         Map<String, String> uriVariables = Map.of("location", location);
-        HttpEntity<String> entity = new HttpEntity<>(headers);
+
+        HttpEntity<String> entity = new HttpEntity<>("body", headers);
 
         ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
                 uriVariables);
