@@ -1,4 +1,4 @@
-# STARTER-team01
+# team01-f23-7pm-4
 
 Lab instructions: <https://ucsb-cs156.github.io/f23/lab/team01.html>
 
@@ -12,28 +12,13 @@ Lab instructions: <https://ucsb-cs156.github.io/f23/lab/team01.html>
 |Sasha Nisavic | anisavic  | `TidesQueryService`         | `TidesController`         |   
 |Eric Marzouk  | EricM5    | `UniversityQueryService`    | `UniversityController`    |
 |Alice Zhong   |alicezhong1| `ZipCodeQueryService`       | `ZipCodeController`       |
-
+|Audrey Zhou   |apzhou0    | `JokeQueryService`          | `JokeController`          |
 ```
+Repo: https://github.com/ucsb-cs156-f23/team01-f23-7pm-4
+
+On Heroku: http://team01.dokku-12.cs.ucsb.edu
 
 
-* TODO: Change the title of this README 
-  in the text `# STARTER-team01` above
-  to match the name of your repo, i. e., `f23-5pm-2-team01`, then delete
-  this TODO item.
-
-* TODO: Correct the links to repo below, 
-  then delete this TODO.  Replace it with 
-  a link to your repo, e.g. 
-  https://github.com/ucsb-cs156-f23/f23-5pm-2-team01
-
-Repo: https://ucsb-cs156-f23/STARTER-team01
-
-* TODO: Correct the links to app on Dokku below, 
-  then delete this TODO.  Replace it with 
-  a link to your running app on Dokku, e.g.
-  https://team01.dokku-00.cs.ucsb.edu
-
-On Heroku: https://team01.dokku-00.cs.ucsb.edu
 
 ## About this repo
 
