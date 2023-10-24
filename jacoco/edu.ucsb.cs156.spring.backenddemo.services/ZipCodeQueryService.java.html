@@ -33,7 +33,7 @@ public class ZipCodeQueryService {
     public static final String ENDPOINT = &quot;http://api.zippopotam.us/us/{zipcode}&quot;;
 
     public String getJSON(String zipcode) throws HttpClientErrorException {
-<span class="fc" id="L36">        log.info(&quot;zip={}&quot;, zipcode);</span>
+<span class="fc" id="L36">        log.info(&quot;zipcode={}&quot;, zipcode);</span>
 <span class="fc" id="L37">        HttpHeaders headers = new HttpHeaders();</span>
 <span class="fc" id="L38">        headers.setAccept(List.of(MediaType.APPLICATION_JSON));</span>
 <span class="fc" id="L39">        headers.setContentType(MediaType.APPLICATION_JSON);</span>
