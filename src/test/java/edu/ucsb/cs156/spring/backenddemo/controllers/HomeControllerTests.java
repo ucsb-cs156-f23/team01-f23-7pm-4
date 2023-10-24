@@ -49,7 +49,7 @@ public class HomeControllerTests {
         String baseUrl = "http://localhost:8080/";
 
         List<String> team = new ArrayList<String>();
-        team.add("Alice Zhou");
+        team.add("Alice Zhong");
         team.add("Audrey Zhou");
         team.add("Audrey Zhu");
         team.add("Benjamin Conte");
